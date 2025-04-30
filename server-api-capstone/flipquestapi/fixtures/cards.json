@@ -1,0 +1,92 @@
+[
+{
+    "model": "flipquestapi.card",
+    "pk": 2,
+    "fields": {
+      "front": "O",
+      "back": "Oxygen",
+      "deck": 1,
+      "difficulty": "easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 3,
+    "fields": {
+      "front": "Fe",
+      "back": "Iron",
+      "deck": 1,
+      "difficulty": "hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 4,
+    "fields": {
+      "front": "Pearl Harbor",
+      "back": "December 7, 1941",
+      "deck": 2,
+      "difficulty": "easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 5,
+    "fields": {
+      "front": "D-Day",
+      "back": "June 6, 1944",
+      "deck": 2,
+      "difficulty": "hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 6,
+    "fields": {
+      "front": "x² + 2x + 1",
+      "back": "(x + 1)²",
+      "deck": 3,
+      "difficulty": "medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 7,
+    "fields": {
+      "front": "Quadratic Formula",
+      "back": "x = (-b ± √(b² - 4ac)) / 2a",
+      "deck": 3,
+      "difficulty": "hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 8,
+    "fields": {
+      "front": "Hola",
+      "back": "Hello",
+      "deck": 4,
+      "difficulty": "easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 9,
+    "fields": {
+      "front": "Gracias",
+      "back": "Thank you",
+      "deck": 4,
+      "difficulty": "medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 10,
+    "fields": {
+      "front": "¿Cómo estás?",
+      "back": "How are you?",
+      "deck": 4,
+      "difficulty": "hard"
+    }
+  }
+]

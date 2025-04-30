@@ -1,0 +1,32 @@
+
+[
+{
+    "model": "flipquestapi.category",
+    "pk": 1,
+    "fields": {
+      "tag": "Science"
+    }
+  },
+  {
+    "model": "flipquestapi.category",
+    "pk": 2,
+    "fields": {
+      "tag": "History"
+    }
+  },
+  {
+    "model": "flipquestapi.category",
+    "pk": 3,
+    "fields": {
+      "tag": "Math"
+    }
+  },
+  {
+    "model": "flipquestapi.category",
+    "pk": 4,
+    "fields": {
+      "tag": "Language"
+    }
+  }
+
+]

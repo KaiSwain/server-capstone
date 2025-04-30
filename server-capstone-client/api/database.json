@@ -1,0 +1,498 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "themeId": 1,
+            "username": "kai_dev",
+            "password": "hashed_password_123"
+        }
+    ],
+    "themes": [
+        {
+            "id": 1,
+            "name": "Ocean",
+            "background_color": "#e0f7fa",
+            "card": "/Rainbowcard.png",
+            "font_color": "#00796b"
+        },
+        {
+            "id": 2,
+            "name": "Sunset",
+            "background_color": "#FFF3E0",
+            "card": "Dw",
+            "font_color": "#E65100"
+        },
+        {
+            "id": 3,
+            "name": "Forest",
+            "background_color": "#E8F5E9",
+            "card": "Dwa",
+            "font_color": "#1B5E20"
+        },
+        {
+            "id": 4,
+            "name": "Midnight",
+            "background_color": "#263238",
+            "card": "dwa",
+            "font_color": "#ECEFF1"
+        },
+        {
+            "id": 5,
+            "name": "Cloud",
+            "background_color": "#E3F2FD",
+            "card": "Dwa",
+            "font_color": "#0D47A1"
+        },
+        {
+            "id": 6,
+            "name": "Rose",
+            "background_color": "#FCE4EC",
+            "card": "dw",
+            "font_color": "#880E4F"
+        }
+    ],
+    "decks": [
+        {
+            "id": 1,
+            "userId": 1,
+            "title": "JavaScript Basics",
+            "categoryId": 1,
+            "created_at": "2025-04-06 19:12:02.912376"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "title": "Python Basics",
+            "categoryId": 2,
+            "created_at": "2025-04-06 19:12:02.912376"
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "title": "Bible Trivia",
+            "categoryId": 6,
+            "created_at": "2025-04-06 19:12:02.912376"
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "title": "Health & Fitness",
+            "categoryId": 16,
+            "created_at": "2025-04-06 19:12:02.912376"
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "title": "History Facts",
+            "categoryId": 10,
+            "created_at": "2025-04-06 19:12:02.912376"
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "deckId": 1,
+            "question": "What keyword declares a block-scoped variable?",
+            "correct_answer": "let",
+            "false_answers": [
+                "var",
+                "def"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 2,
+            "deckId": 1,
+            "question": "Which function is used to log to the console?",
+            "correct_answer": "console.log",
+            "false_answers": [
+                "print",
+                "echo"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 3,
+            "deckId": 1,
+            "question": "What data type is returned by typeof null?",
+            "correct_answer": "object",
+            "false_answers": [
+                "null",
+                "undefined"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 4,
+            "deckId": 2,
+            "question": "Which keyword defines a function?",
+            "correct_answer": "def",
+            "false_answers": [
+                "function",
+                "fun"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 5,
+            "deckId": 2,
+            "question": "What symbol is used to start a comment?",
+            "correct_answer": "#",
+            "false_answers": [
+                "//",
+                "<!--"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 6,
+            "deckId": 2,
+            "question": "What data structure uses key-value pairs?",
+            "correct_answer": "dictionary",
+            "false_answers": [
+                "list",
+                "tuple"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 7,
+            "deckId": 3,
+            "question": "Who built the ark?",
+            "correct_answer": "Noah",
+            "false_answers": [
+                "Moses",
+                "Abraham"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 8,
+            "deckId": 3,
+            "question": "How many days did God take to create the world?",
+            "correct_answer": "6",
+            "false_answers": [
+                "7",
+                "40"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 9,
+            "deckId": 3,
+            "question": "Who was swallowed by a great fish?",
+            "correct_answer": "Jonah",
+            "false_answers": [
+                "Peter",
+                "Paul"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 10,
+            "deckId": 4,
+            "question": "What nutrient builds muscle?",
+            "correct_answer": "Protein",
+            "false_answers": [
+                "Fat",
+                "Sugar"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 11,
+            "deckId": 4,
+            "question": "What is a common cardio exercise?",
+            "correct_answer": "Running",
+            "false_answers": [
+                "Bench press",
+                "Deadlift"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 12,
+            "deckId": 4,
+            "question": "How many minutes of exercise is recommended daily?",
+            "correct_answer": "30",
+            "false_answers": [
+                "10",
+                "90"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 13,
+            "deckId": 5,
+            "question": "Who was the first president of the United States?",
+            "correct_answer": "George Washington",
+            "false_answers": [
+                "Thomas Jefferson",
+                "Abraham Lincoln"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 14,
+            "deckId": 5,
+            "question": "In what year did WW2 end?",
+            "correct_answer": "1945",
+            "false_answers": [
+                "1939",
+                "1918"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        },
+        {
+            "id": 15,
+            "deckId": 5,
+            "question": "What wall fell in 1989?",
+            "correct_answer": "Berlin Wall",
+            "false_answers": [
+                "Great Wall",
+                "Hadrian's Wall"
+            ],
+            "hint": "",
+            "is_true_statement": null
+        }
+    
+    ],
+    "likeddecks": [
+        {
+            "id": 1,
+            "deckId": 1,
+            "userId": 1,
+            "liked_at": "2025-04-06 00:22:32.895467"
+        },
+        {
+            "id": 2,
+            "deckId": 2,
+            "userId": 1,
+            "liked_at": "2025-03-29 14:37:13"
+        },
+        {
+            "id": 3,
+            "deckId": 3,
+            "userId": 1,
+            "liked_at": "2025-02-12 05:58:34"
+        },
+        {
+            "id": 4,
+            "deckId": 4,
+            "userId": 1,
+            "liked_at": "2025-01-28 15:36:24"
+        },
+        {
+            "id": 5,
+            "deckId": 5,
+            "userId": 1,
+            "liked_at": "2025-03-06 16:27:08"
+        }
+    ],
+    "StoredDecks": [
+        {
+            "id": 1,
+            "deckId": 1,
+            "userId": 1,
+            "stored_at": "2025-04-06 00:22:32.895470"
+        },
+        {
+            "id": 2,
+            "deckId": 2,
+            "userId": 1,
+            "stored_at": "2025-03-03 00:31:00"
+        },
+        {
+            "id": 3,
+            "deckId": 3,
+            "userId": 1,
+            "stored_at": "2025-01-30 13:51:27"
+        },
+        {
+            "id": 4,
+            "deckId": 4,
+            "userId": 1,
+            "stored_at": "2025-03-03 19:13:30"
+        },
+        {
+            "id": 5,
+            "deckId": 5,
+            "userId": 1,
+            "stored_at": "2025-03-20 21:54:16"
+        }
+    ],
+    "cardemotes": [
+        {
+            "id": 1,
+            "cardId": 2,
+            "userId": 1,
+            "emote": "\ud83d\udcaa"
+        },
+        {
+            "id": 2,
+            "cardId": 7,
+            "userId": 1,
+            "emote": "\u2764\ufe0f",
+            "created_at": "2025-03-01 19:21:24"
+        },
+        {
+            "id": 3,
+            "cardId": 17,
+            "userId": 1,
+            "emote": "\ud83d\ude24",
+            "created_at": "2025-03-13 00:43:18"
+        },
+        {
+            "id": 4,
+            "cardId": 3,
+            "userId": 1,
+            "emote": "\u2764\ufe0f",
+            "created_at": "2025-02-11 15:16:21"
+        },
+        {
+            "id": 5,
+            "cardId": 11,
+            "userId": 1,
+            "emote": "\ud83d\ude24",
+            "created_at": "2025-01-03 01:25:03"
+        },
+        {
+            "id": 6,
+            "cardId": 13,
+            "userId": 1,
+            "emote": "\ud83d\ude04",
+            "created_at": "2025-02-08 05:24:10"
+        },
+        {
+            "id": 7,
+            "cardId": 2,
+            "userId": 1,
+            "emote": "\ud83d\ude04",
+            "created_at": "2025-03-30 14:58:20"
+        },
+        {
+            "id": 8,
+            "cardId": 8,
+            "userId": 1,
+            "emote": "\ud83d\ude15",
+            "created_at": "2025-01-18 03:01:12"
+        },
+        {
+            "id": 9,
+            "cardId": 4,
+            "userId": 1,
+            "emote": "\ud83d\ude24",
+            "created_at": "2025-03-25 05:28:03"
+        },
+        {
+            "id": 10,
+            "cardId": 9,
+            "userId": 1,
+            "emote": "\u2764\ufe0f",
+            "created_at": "2025-02-18 23:41:52"
+        },
+        {
+            "id": 11,
+            "cardId": 16,
+            "userId": 1,
+            "emote": "\ud83d\ude15",
+            "created_at": "2025-03-07 10:23:45"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "JavaScript"
+        },
+        {
+            "id": 2,
+            "name": "Python"
+        },
+        {
+            "id": 3,
+            "name": "React"
+        },
+        {
+            "id": 4,
+            "name": "HTML & CSS"
+        },
+        {
+            "id": 5,
+            "name": "Faith & Scripture"
+        },
+        {
+            "id": 6,
+            "name": "Bible Trivia"
+        },
+        {
+            "id": 7,
+            "name": "Memory Verses"
+        },
+        {
+            "id": 8,
+            "name": "Science"
+        },
+        {
+            "id": 9,
+            "name": "Math"
+        },
+        {
+            "id": 10,
+            "name": "History"
+        },
+        {
+            "id": 11,
+            "name": "Geography"
+        },
+        {
+            "id": 12,
+            "name": "Language Learning"
+        },
+        {
+            "id": 13,
+            "name": "SAT / ACT Prep"
+        },
+        {
+            "id": 14,
+            "name": "Life Skills"
+        },
+        {
+            "id": 15,
+            "name": "Personal Growth"
+        },
+        {
+            "id": 16,
+            "name": "Fitness & Health"
+        },
+        {
+            "id": 17,
+            "name": "Coding Interview Prep"
+        },
+        {
+            "id": 18,
+            "name": "Devotionals"
+        },
+        {
+            "id": 19,
+            "name": "Quotes & Inspiration"
+        },
+        {
+            "id": 20,
+            "name": "Other"
+        }
+    ]
+}
