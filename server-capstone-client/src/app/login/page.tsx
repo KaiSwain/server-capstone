@@ -5,8 +5,8 @@ import Link from "next/link";
 import "./Login.css"
 
 export default function Login() {
-    const [email, setEmail] = useState("steve@brownlee.com")
-    const [password, setPassword] = useState("brownlee")
+    const [email, setEmail] = useState("kai@kai.com")
+    const [password, setPassword] = useState("kai")
     const existDialog = useRef()
     const router = useRouter()
 

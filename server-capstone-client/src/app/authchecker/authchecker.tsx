@@ -13,7 +13,7 @@ export default function AuthCheck({ children }) {
   useEffect(() => {
     // Check if path is public
     const isPublicPath = publicPaths.some(pp => pathname === pp);
-    
+    debugger
     // Get token from localStorage
     const tokenString = localStorage.getItem('game_token');
     const hasToken = !!tokenString;

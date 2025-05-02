@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import "../login/Login.css"
 
 export default function Register() {
-    const [email, setEmail] = useState("admina@straytor.com")
-    const [password, setPassword] = useState("straytor")
-    const [firstName, setFirstName] = useState("Admina")
-    const [lastName, setLastName] = useState("Straytor")
-    const [username, setUserName] = useState("username1")
+    const [email, setEmail] = useState("kai@kai.com")
+    const [password, setPassword] = useState("kai")
+    const [firstName, setFirstName] = useState("kai")
+    const [lastName, setLastName] = useState("kair")
+    const [username, setUserName] = useState("RainySwainyyy")
     const existDialog = useRef()
     const router = useRouter()
 
