@@ -19,3 +19,10 @@ class Deck(models.Model):
         serializer = CardSerializer(cards, many=True)
         return serializer.data
     
+    def is_owner(self, request):
+        flipper = Flipper.objects.get(user=request.user)
+        if self.creator == flipper:
+            return True
+        else:
+            return False
+    

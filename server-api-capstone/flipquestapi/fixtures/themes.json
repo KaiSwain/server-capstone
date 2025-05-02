@@ -5,8 +5,7 @@
     "fields": {
       "name": "Dark",
       "background": "#121212",
-      "card_color": "#1E1E1E",
-      "font_color": "#FFFFFF"
+      "card_path":"/media/rainbow2.png"
     }
   },
   {
@@ -15,8 +14,7 @@
     "fields": {
       "name": "Light",
       "background": "#F5F5F5",
-      "card_color": "#FFFFFF",
-      "font_color": "#000000"
+      "card_path":"/media/rainbow2.png"
     }
   },
   {
@@ -25,8 +23,7 @@
     "fields": {
       "name": "Ocean",
       "background": "#1A5276",
-      "card_color": "#2874A6",
-      "font_color": "#ECF0F1"
+      "card_path": "/media/rainbow2.png"
     }
   }
 ]

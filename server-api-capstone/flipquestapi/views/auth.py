@@ -72,7 +72,7 @@ def register_user(request):
             new_flipper.user=new_user
             new_flipper.coins=0
             new_flipper.created_at=datetime.date.today()
-            new_flipper.name=request.data['username']
+            new_flipper.username=request.data['username']
             new_flipper.save()
 
         except IntegrityError:
