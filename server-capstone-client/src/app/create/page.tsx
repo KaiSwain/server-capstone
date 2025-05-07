@@ -1,143 +1,197 @@
 "use client";
 
 import { useState } from "react";
+import { postDeck } from "../data/decks";
 
 export default function Create() {
   const [deckTitle, setDeckTitle] = useState("");
+  const [deckDescription, setDeckDescription] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedDifficulty, setSelectedDifficulty] = useState("");
+  const [cards, setCards] = useState([]);
   const [front, setFront] = useState("");
   const [back, setBack] = useState("");
-  const [cards, setCards] = useState([]);
+  const [cardDifficulty, setCardDifficulty] = useState("");
   const [editIndex, setEditIndex] = useState<number | null>(null);
 
+  const categoryOptions = ["Faith", "Science", "History", "Coding", "Other"];
+  const difficultyOptions = ["Easy", "Medium", "Hard"];
+
   const addOrUpdateCard = () => {
-    if (!front.trim() || !back.trim()) return;
+    if (!front.trim() || !back.trim() || !cardDifficulty) return;
+    const newCard = { front, back, difficulty: cardDifficulty };
 
     if (editIndex !== null) {
-      // Editing existing card
-      const updatedCards = [...cards];
-      updatedCards[editIndex] = { front, back };
-      setCards(updatedCards);
+      const updated = [...cards];
+      updated[editIndex] = newCard;
+      setCards(updated);
       setEditIndex(null);
     } else {
-      // Adding new card
-      setCards([...cards, { front, back }]);
+      setCards([...cards, newCard]);
     }
 
     setFront("");
     setBack("");
+    setCardDifficulty("");
   };
 
   const editCard = (index: number) => {
     const card = cards[index];
     setFront(card.front);
     setBack(card.back);
+    setCardDifficulty(card.difficulty);
     setEditIndex(index);
   };
 
   const deleteCard = (index: number) => {
-    const updatedCards = cards.filter((_, i) => i !== index);
-    setCards(updatedCards);
+    const updated = cards.filter((_, i) => i !== index);
+    setCards(updated);
     if (editIndex === index) {
       setFront("");
       setBack("");
+      setCardDifficulty("");
       setEditIndex(null);
     }
   };
 
   const handleSubmitDeck = () => {
-    if (!deckTitle.trim() || cards.length === 0) {
-      alert("Give your deck a title and at least one card.");
+    if (!deckTitle || !deckDescription || !selectedDifficulty || !selectedCategory || cards.length === 0) {
+      alert("Please fill out all fields and add at least one card.");
       return;
     }
 
     const deck = {
       title: deckTitle,
-      cards: cards,
+      description: deckDescription,
+      difficulty: selectedDifficulty,
+      category: selectedCategory,
+      cards,
     };
 
+    postDeck(deck);
     console.log("Deck submitted:", deck);
-    // TODO: POST to backend
-
-    setDeckTitle("");
-    setCards([]);
-    setFront("");
-    setBack("");
-    setEditIndex(null);
   };
 
   return (
-    <div className="p-8 max-w-2xl mx-auto space-y-6">
-      <h1 className="text-2xl font-bold text-gray-800">Create a New Deck</h1>
+    <div className="p-6 max-w-3xl mx-auto text-white">
+      <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-transparent bg-clip-text mb-8">
+        ✨ Create Your Deck
+      </h1>
 
-      <input
-        type="text"
-        placeholder="Deck title"
-        value={deckTitle}
-        onChange={(e) => setDeckTitle(e.target.value)}
-        className="w-full p-2 border rounded"
-      />
-
-      {/* Card Input */}
       <div className="space-y-4">
         <input
           type="text"
-          placeholder="Card front"
+          placeholder="Deck title"
+          value={deckTitle}
+          onChange={(e) => setDeckTitle(e.target.value)}
+          className="w-full p-3 rounded-lg bg-zinc-800 placeholder-gray-400"
+        />
+
+        <textarea
+          placeholder="Deck description"
+          value={deckDescription}
+          onChange={(e) => setDeckDescription(e.target.value)}
+          className="w-full p-3 rounded-lg bg-zinc-800 placeholder-gray-400"
+          rows={3}
+        />
+
+        <select
+          value={selectedDifficulty}
+          onChange={(e) => setSelectedDifficulty(e.target.value)}
+          className="w-full p-3 rounded-lg bg-zinc-800"
+        >
+          <option value="">Select deck difficulty</option>
+          {difficultyOptions.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="w-full p-3 rounded-lg bg-zinc-800"
+        >
+          <option value="">Select deck category</option>
+          {categoryOptions.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+      </div>
+
+      <hr className="my-8 border-gray-600" />
+
+      <h2 className="text-2xl font-semibold mb-4">🧠 Add a Card</h2>
+
+      <div className="space-y-4">
+        <input
+          type="text"
+          placeholder="Front (question)"
           value={front}
           onChange={(e) => setFront(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 rounded-lg bg-zinc-800 placeholder-gray-400"
         />
         <input
           type="text"
-          placeholder="Card back"
+          placeholder="Back (answer)"
           value={back}
           onChange={(e) => setBack(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 rounded-lg bg-zinc-800 placeholder-gray-400"
         />
+        <select
+          value={cardDifficulty}
+          onChange={(e) => setCardDifficulty(e.target.value)}
+          className="w-full p-3 rounded-lg bg-zinc-800"
+        >
+          <option value="">Select card difficulty</option>
+          {difficultyOptions.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
         <button
           onClick={addOrUpdateCard}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-lg shadow"
         >
-          {editIndex !== null ? "Update Card" : "Add Card"}
+          {editIndex !== null ? "Update Card" : "➕ Add Card"}
         </button>
       </div>
 
-      {/* List of Cards */}
-      <div>
-        <h2 className="text-xl font-semibold mb-2">Cards in Deck</h2>
-        <ul className="space-y-2">
+      {cards.length > 0 && (
+        <div className="mt-10 space-y-4">
+          <h2 className="text-2xl font-semibold">📦 Cards in Deck</h2>
           {cards.map((card, index) => (
-            <li
+            <div
               key={index}
-              className="border p-3 rounded bg-white shadow-sm flex justify-between items-start"
+              className="bg-zinc-800 rounded-lg p-4 flex flex-col gap-2"
             >
               <div>
-                <strong>Front:</strong> {card.front} <br />
-                <strong>Back:</strong> {card.back}
+                <span className="text-sm font-light">Front:</span>
+                <p className="text-lg font-medium">{card.front}</p>
               </div>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => editCard(index)}
-                  className="text-sm text-yellow-600 hover:underline"
-                >
-                  Edit
-                </button>
-                <button
-                  onClick={() => deleteCard(index)}
-                  className="text-sm text-red-600 hover:underline"
-                >
-                  Delete
-                </button>
+              <div>
+                <span className="text-sm font-light">Back:</span>
+                <p className="text-lg font-medium">{card.back}</p>
               </div>
-            </li>
+              <div className="flex justify-between text-sm text-gray-400">
+                <span>Difficulty: {card.difficulty}</span>
+                <div className="flex gap-3">
+                  <button onClick={() => editCard(index)} className="hover:underline text-yellow-400">
+                    Edit
+                  </button>
+                  <button onClick={() => deleteCard(index)} className="hover:underline text-red-400">
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
-      </div>
+        </div>
+      )}
 
       <button
         onClick={handleSubmitDeck}
-        className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        className="mt-10 w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg shadow-lg"
       >
-        Submit Deck
+        ✅ Submit Deck
       </button>
     </div>
   );

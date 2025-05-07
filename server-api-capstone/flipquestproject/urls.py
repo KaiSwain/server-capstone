@@ -6,10 +6,11 @@ from django.conf.urls.static import static
 from flipquestapi.views.deck import DeckView
 from flipquestapi.views.auth import login_user, register_user
 from flipquestapi.views.flipper import user_profile
+from flipquestapi.views.likeddeck import LikedDeckView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register("decks", DeckView, "deck")
-
+router.register("like_deck", LikedDeckView, "like" )
 
 
 urlpatterns = [

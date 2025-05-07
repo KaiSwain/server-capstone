@@ -8,8 +8,8 @@
       "description": "Basic chemistry concepts and elements",
       "created_at": "2024-02-01",
       "creator": 1,
-      "difficulty": "easy",
-      "category": 1
+      "difficulty": "Easy",
+      "category": "Chemistry"
     }
   },
   {
@@ -20,8 +20,8 @@
       "description": "Key events and dates from World War II",
       "created_at": "2024-02-03",
       "creator": 2,
-      "difficulty": "medium",
-      "category": 2
+      "difficulty": "Medium",
+      "category": "History"
     }
   },
   {
@@ -32,8 +32,8 @@
       "description": "Basic algebra equations and concepts",
       "created_at": "2024-02-05",
       "creator": 3,
-      "difficulty": "hard",
-      "category": 3
+      "difficulty": "Hard",
+      "category": "Math"
     }
   },
   {
@@ -44,8 +44,8 @@
       "description": "Common Spanish words and phrases",
       "created_at": "2024-02-07",
       "creator": 1,
-      "difficulty": "extreme",
-      "category": 4
+      "difficulty": "Easy",
+      "category": "Spanish"
     }
   }
 ]

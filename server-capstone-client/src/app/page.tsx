@@ -4,70 +4,89 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getDecks } from "./data/decks";
 import { getUser } from "./data/user";
-
-type Deck = {
-  id: number;
-  ownerId: number;
-};
+import { Profile } from "./components/profile";
 
 export default function AllDecksView() {
-  const [decks, setDecks] = useState<Deck[]>([]);
+  const [decks, setDecks] = useState([]);
   const [user, setUser] = useState({});
 
-  //get store each deck in database
   useEffect(() => {
-    getDecks().then((res) => {
-      setDecks(res);
-      console.log(decks);
-    });
+    getDecks().then(setDecks);
   }, []);
 
   useEffect(() => {
-    getUser().then((res) => {
-      setUser(res);
-    });
+    getUser().then(setUser);
   }, []);
 
   const backendUrl =
     process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
-  return (
-    <div className="flex flex-wrap p-10 gap-4 max-w-200">
-      {decks.map((d) => (
-        <div key={d.id}>
-          <div className="relative w-[300px] h-[200px] cursor-pointer group border-cyan-50">
-            <Link href={`/study/${d.id}`}>
-              {user?.theme?.card_path && (
-                <Image
-                  src={`${backendUrl}${user.theme.card_path}`}
-                  alt="flashcards"
-                  width={300}
-                  height={200}
-                  className="transform rounded-lg object-cover w-full h-full z-0 scale-100 group-hover:scale-125"
-                />
-              )}
-
-              {/* Overlay container */}
-              <div className="absolute inset-0 z-10 flex flex-col justify-between p-4">
-                {/* Title - centered */}
-                <div className="absolute wrap-normal max-w-23 inset-x-18 inset-y-21 text-white text-ml font-bold font-mono  group-hover:scale-125">
-                  {d?.title}
-                </div>
-
-                {/* Bottom info row */}
-                <div>
-                  <span className="absolute font-extralight font-serif inset-x-18 inset-y-4.5 group-hover:scale-125">
-                    by {d.creator.username}
-                  </span>
-                  <span className="absolute font-sans inset-y-9 inset-x-14 group-hover:scale-125">
-                    {d.category.tag}
-                  </span>
-                </div>
-              </div>
-            </Link>
+    const getCategoryGradient = (category) => {
+      switch (category.toLowerCase()) {
+        case "science":
+          return "from-green-400 via-blue-500 to-purple-600";
+        case "math":
+          return "from-yellow-400 via-orange-500 to-red-600";
+        case "history":
+          return "from-rose-400 via-pink-500 to-fuchsia-600";
+        case "language":
+          return "from-sky-400 via-cyan-500 to-teal-600";
+        case "art":
+          return "from-pink-400 via-rose-500 to-yellow-500";
+        default:
+          return "from-indigo-500 via-purple-500 to-pink-500";
+      }
+    };
+    
+    return (
+      <div className="min-h-screen bg-black text-white px-6 py-8">
+        {/* FlipQuest Title */}
+        <h1 className="text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 mb-10">
+          FlipQuest
+        </h1>
+    
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Deck Cards */}
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8">
+              {decks.map((d) => (
+                <Link href={`/study/${d.id}`} key={d.id}>
+                  <div
+                    className={`group relative w-full max-w-[400px] h-[200px] rounded-xl overflow-hidden shadow-lg bg-gradient-to-br ${getCategoryGradient(
+                      d.category || ""
+                    )} hover:scale-[1.03] transition-transform duration-300`}
+                  >
+                    {/* Info Overlay */}
+                    <div className="absolute inset-0 backdrop-blur-sm z-10 p-4 flex flex-col justify-between rounded-xl">
+                      <div className="text-sm text-pink-200 font-medium">
+                        by {d.creator.username}
+                      </div>
+                      <div className="text-xl font-bold text-center break-words">
+                        {d.title}
+                      </div>
+                      <div className="flex justify-between text-sm text-gray-200">
+                        <span>{d.category}</span>
+                        <span>{d.difficulty}</span>
+                        <span>Likes: {d.likes}</span>
+                      </div>
+                    </div>
+    
+                    {/* Glow Shadow */}
+                    <div className="absolute -bottom-2 -right-2 w-full h-full rounded-xl bg-black opacity-10 blur-2xl" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+    
+            {/* Profile Card */}
+            <div className="w-full lg:w-[280px] lg:sticky lg:top-24 shrink-0">
+              {user && <Profile profile={user} />}
+            </div>
           </div>
         </div>
-      ))}
-    </div>
-  );
+      </div>
+    );
 }
+
+
+
