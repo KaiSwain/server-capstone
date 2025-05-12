@@ -1,91 +1,801 @@
 [
-{
+  {
     "model": "flipquestapi.card",
-    "pk": 2,
+    "pk": 11,
     "fields": {
-      "front": "O",
-      "back": "Oxygen",
-      "deck": 1,
+      "front": "Why don't scientists trust atoms?",
+      "back": "Because they make up everything!",
+      "deck": 5,
       "difficulty": "Easy"
     }
   },
   {
     "model": "flipquestapi.card",
-    "pk": 3,
+    "pk": 12,
     "fields": {
-      "front": "Fe",
-      "back": "Iron",
-      "deck": 1,
-      "difficulty": "Hard"
-    }
-  },
-  {
-    "model": "flipquestapi.card",
-    "pk": 4,
-    "fields": {
-      "front": "Pearl Harbor",
-      "back": "December 7, 1941",
-      "deck": 2,
+      "front": "What did the janitor say when he jumped out of the closet?",
+      "back": "Supplies!",
+      "deck": 5,
       "difficulty": "Easy"
     }
   },
   {
     "model": "flipquestapi.card",
-    "pk": 5,
+    "pk": 13,
     "fields": {
-      "front": "D-Day",
-      "back": "June 6, 1944",
-      "deck": 2,
+      "front": "I'm reading a book on anti-gravity...",
+      "back": "It's impossible to put down!",
+      "deck": 5,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 14,
+    "fields": {
+      "front": "What do you call a fake noodle?",
+      "back": "An impasta!",
+      "deck": 5,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 15,
+    "fields": {
+      "front": "Select all direct children of div with class 'container'",
+      "back": "div.container > *",
+      "deck": 6,
       "difficulty": "Hard"
     }
   },
   {
     "model": "flipquestapi.card",
-    "pk": 6,
+    "pk": 16,
     "fields": {
-      "front": "x² + 2x + 1",
-      "back": "(x + 1)²",
-      "deck": 3,
+      "front": "Select all elements with both classes 'btn' and 'primary'",
+      "back": ".btn.primary",
+      "deck": 6,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 17,
+    "fields": {
+      "front": "Select the fourth list item in an unordered list",
+      "back": "ul li:nth-child(4)",
+      "deck": 6,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 18,
+    "fields": {
+      "front": "Select all inputs that are disabled",
+      "back": "input:disabled",
+      "deck": 6,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 19,
+    "fields": {
+      "front": "What extinct animal was known as the 'Tasmanian Tiger'?",
+      "back": "Thylacine",
+      "deck": 7,
       "difficulty": "Medium"
     }
   },
   {
     "model": "flipquestapi.card",
-    "pk": 7,
+    "pk": 20,
     "fields": {
-      "front": "Quadratic Formula",
-      "back": "x = (-b ± √(b² - 4ac)) / 2a",
-      "deck": 3,
-      "difficulty": "Hard"
-    }
-  },
-  {
-    "model": "flipquestapi.card",
-    "pk": 8,
-    "fields": {
-      "front": "Hola",
-      "back": "Hello",
-      "deck": 4,
-      "difficulty": "Easy"
-    }
-  },
-  {
-    "model": "flipquestapi.card",
-    "pk": 9,
-    "fields": {
-      "front": "Gracias",
-      "back": "Thank you",
-      "deck": 4,
+      "front": "What giant prehistoric armadillo-like creature could grow up to 10 feet long?",
+      "back": "Glyptodon",
+      "deck": 7,
       "difficulty": "Medium"
     }
   },
   {
     "model": "flipquestapi.card",
-    "pk": 10,
+    "pk": 21,
     "fields": {
-      "front": "¿Cómo estás?",
-      "back": "How are you?",
-      "deck": 4,
+      "front": "What flightless bird went extinct in 1662 and was endemic to Mauritius?",
+      "back": "Dodo",
+      "deck": 7,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 22,
+    "fields": {
+      "front": "What car-sized prehistoric salamander lived in rivers about 230 million years ago?",
+      "back": "Koolasuchus",
+      "deck": 7,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 23,
+    "fields": {
+      "front": "\"You're gonna need a bigger boat.\"",
+      "back": "Jaws (1975) - improvised by Roy Scheider",
+      "deck": 8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 24,
+    "fields": {
+      "front": "\"Here's looking at you, kid.\"",
+      "back": "Casablanca (1942) - improvised by Humphrey Bogart",
+      "deck": 8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 25,
+    "fields": {
+      "front": "\"I'm the king of the world!\"",
+      "back": "Titanic (1997) - improvised by Leonardo DiCaprio",
+      "deck": 8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 26,
+    "fields": {
+      "front": "\"Alright, alright, alright.\"",
+      "back": "Dazed and Confused (1993) - improvised by Matthew McConaughey",
+      "deck": 8,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 27,
+    "fields": {
+      "front": "How to undo your last commit while keeping changes?",
+      "back": "git reset --soft HEAD~1",
+      "deck": 9,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 28,
+    "fields": {
+      "front": "How to see the commit history for a specific file?",
+      "back": "git log --follow [file]",
+      "deck": 9,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 29,
+    "fields": {
+      "front": "How to discard all local changes in your working directory?",
+      "back": "git reset --hard HEAD",
+      "deck": 9,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 30,
+    "fields": {
+      "front": "How to temporarily store modified tracked files?",
+      "back": "git stash",
+      "deck": 9,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 31,
+    "fields": {
+      "front": "This sweet treat was invented when a chocolate bar melted in a researcher's pocket near a radar",
+      "back": "Microwave Chocolate Chip Cookies",
+      "deck": 10,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 32,
+    "fields": {
+      "front": "This bubbly drink was created when a pharmacist mixed carbonated water with his headache medicine",
+      "back": "Coca-Cola",
+      "deck": 10,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 33,
+    "fields": {
+      "front": "This breakfast staple was created when a chef accidentally dropped a potato in hot oil",
+      "back": "Potato Chips",
+      "deck": 10,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 34,
+    "fields": {
+      "front": "This ice cream novelty was invented when an 11-year-old left a drink with a stirring stick outside overnight",
+      "back": "Popsicle",
+      "deck": 10,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 35,
+    "fields": {
+      "front": "What is the result of this code: Promise.resolve(1).then(x => x + 1)?",
+      "back": "A Promise that resolves to 2",
+      "deck": 11,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 36,
+    "fields": {
+      "front": "How do you properly handle errors in a Promise chain?",
+      "back": "By using .catch() at the end of the chain or try/catch with async/await",
+      "deck": 11,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 37,
+    "fields": {
+      "front": "What's the difference between Promise.all() and Promise.race()?",
+      "back": "Promise.all() waits for all promises to resolve, Promise.race() resolves as soon as any promise resolves or rejects",
+      "deck": 11,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 38,
+    "fields": {
+      "front": "What is Promise chaining?",
+      "back": "Connecting multiple asynchronous operations by returning a Promise from a .then() callback",
+      "deck": 11,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 39,
+    "fields": {
+      "front": "This Olympic sport involved shooting live pigeons until 1900",
+      "back": "Live Pigeon Shooting",
+      "deck": 12,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 40,
+    "fields": {
+      "front": "This Olympic event was like a tug of war, but with horses",
+      "back": "Equestrian Long Jump",
+      "deck": 12,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 41,
+    "fields": {
+      "front": "This Olympic sport involved swimming through obstacles and climbing poles",
+      "back": "Obstacle Swimming",
+      "deck": 12,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 42,
+    "fields": {
+      "front": "This Olympic sport was like croquet but was only featured in the 1900 Paris games",
+      "back": "Roque",
+      "deck": 12,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 43,
+    "fields": {
+      "front": "\"Thou froward flap-mouthed hedge-pig!\"",
+      "back": "A disrespectful, loud-mouthed person resembling a lowly hedgehog",
+      "deck": 13,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 44,
+    "fields": {
+      "front": "\"Thou art a boil, a plague sore, an embossed carbuncle!\"",
+      "back": "You are a festering wound on society",
+      "deck": 13,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 45,
+    "fields": {
+      "front": "\"Thou clay-brained guts, thou knotty-pated fool!\"",
+      "back": "You dim-witted stomach, you thick-headed fool!",
+      "deck": 13,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 46,
+    "fields": {
+      "front": "\"Away, you three-inch fool!\"",
+      "back": "Go away, you insignificantly small person!",
+      "deck": 13,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 47,
+    "fields": {
+      "front": "RegEx to match a valid email address",
+      "back": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+      "deck": 14,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 48,
+    "fields": {
+      "front": "RegEx to validate a password (min 8 chars, at least 1 uppercase letter, 1 lowercase letter, 1 number)",
+      "back": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
+      "deck": 14,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 49,
+    "fields": {
+      "front": "RegEx to match a valid URL",
+      "back": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$",
+      "deck": 14,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 50,
+    "fields": {
+      "front": "RegEx to validate a date in format MM/DD/YYYY",
+      "back": "^(0[1-9]|1[0-2])\\/(0[1-9]|[12][0-9]|3[01])\\/(19|20)\\d\\d$",
+      "deck": 14,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 51,
+    "fields": {
+      "front": "This government program was initially dismissed as a conspiracy theory but was later confirmed in the 1970s",
+      "back": "MKULTRA (CIA mind control and chemical interrogation experiments)",
+      "deck": 15,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 52,
+    "fields": {
+      "front": "This global surveillance program was revealed by Edward Snowden in 2013",
+      "back": "PRISM (NSA mass surveillance program)",
+      "deck": 15,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 53,
+    "fields": {
+      "front": "This conspiracy theory about government testing on unknowing citizens turned out to be true in 1997",
+      "back": "Tuskegee Syphilis Study",
+      "deck": 15,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 54,
+    "fields": {
+      "front": "This conspiracy about a secret government program to import cocaine was confirmed in the 1980s",
+      "back": "Iran-Contra Affair",
+      "deck": 15,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 55,
+    "fields": {
+      "front": "The ability to know exactly when someone is about to call but only when you're in the shower",
+      "back": "Hydro-Telepathy",
+      "deck": 16,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 56,
+    "fields": {
+      "front": "The power to always pick the slowest line at the grocery store",
+      "back": "Queue Calamity",
+      "deck": 16,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 57,
+    "fields": {
+      "front": "The ability to perfectly fold fitted sheets",
+      "back": "Sheet Whisperer",
+      "deck": 16,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 58,
+    "fields": {
+      "front": "The power to make USB drives go in correctly on the first try",
+      "back": "USB Intuition",
+      "deck": 16,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 59,
+    "fields": {
+      "front": "How to center a div horizontally and vertically using Flexbox",
+      "back": "display: flex; justify-content: center; align-items: center;",
+      "deck": 17,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 60,
+    "fields": {
+      "front": "What's the main difference between Flexbox and Grid?",
+      "back": "Flexbox is one-dimensional (row OR column), Grid is two-dimensional (rows AND columns)",
+      "deck": 17,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 61,
+    "fields": {
+      "front": "How to create a 3-column layout with equal width columns using Grid",
+      "back": "display: grid; grid-template-columns: repeat(3, 1fr);",
+      "deck": 17,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 62,
+    "fields": {
+      "front": "Which is better for overall page layout, Flexbox or Grid?",
+      "back": "Grid is typically better for overall page layout, while Flexbox excels at component-level layout",
+      "deck": 17,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 63,
+    "fields": {
+      "front": "\"'Scuse me while I kiss this guy\"",
+      "back": "\"'Scuse me while I kiss the sky\" - Purple Haze by Jimi Hendrix",
+      "deck": 18,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 64,
+    "fields": {
+      "front": "\"Hold me closer, Tony Danza\"",
+      "back": "\"Hold me closer, tiny dancer\" - Tiny Dancer by Elton John",
+      "deck": 18,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 65,
+    "fields": {
+      "front": "\"There's a bathroom on the right\"",
+      "back": "\"There's a bad moon on the rise\" - Bad Moon Rising by Creedence Clearwater Revival",
+      "deck": 18,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 66,
+    "fields": {
+      "front": "\"The ants are my friends, they're blowing in the wind\"",
+      "back": "\"The answer, my friend, is blowing in the wind\" - Blowin' in the Wind by Bob Dylan",
+      "deck": 18,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 67,
+    "fields": {
+      "front": "What's the most concise way to swap two variables in Python?",
+      "back": "a, b = b, a",
+      "deck": 19,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 68,
+    "fields": {
+      "front": "What's a one-line way to flatten a list of lists in Python?",
+      "back": "[item for sublist in list_of_lists for item in sublist]",
+      "deck": 19,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 69,
+    "fields": {
+      "front": "What does the 'walrus operator' (:=) do in Python?",
+      "back": "It assigns values to variables as part of an expression",
+      "deck": 19,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 70,
+    "fields": {
+      "front": "What's the difference between 'is' and '==' in Python?",
+      "back": "'is' checks if objects are the same object in memory, '==' checks if values are equal",
+      "deck": 19,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 71,
+    "fields": {
+      "front": "Hygge (Danish)",
+      "back": "A quality of coziness and comfortable conviviality that engenders a feeling of contentment or well-being",
+      "deck": 20,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 72,
+    "fields": {
+      "front": "Schadenfreude (German)",
+      "back": "Pleasure derived from another person's misfortune",
+      "deck": 20,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 73,
+    "fields": {
+      "front": "Komorebi (Japanese)",
+      "back": "Sunlight filtering through tree leaves",
+      "deck": 20,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 74,
+    "fields": {
+      "front": "Saudade (Portuguese)",
+      "back": "A deep longing for something or someone that is absent and may never return",
+      "deck": 20,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 75,
+    "fields": {
+      "front": "HTTP 404",
+      "back": "\"I can't find your profile picture because you ghosted me.\"",
+      "deck": 21,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 76,
+    "fields": {
+      "front": "HTTP 403",
+      "back": "\"You're not allowed to see my private photos until date #3.\"",
+      "deck": 21,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 77,
+    "fields": {
+      "front": "HTTP 500",
+      "back": "\"I'm having an emotional breakdown right now. Please try again later.\"",
+      "deck": 21,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 78,
+    "fields": {
+      "front": "HTTP 418",
+      "back": "\"I'm a teapot, not your boyfriend.\"",
+      "deck": 21,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 79,
+    "fields": {
+      "front": "Arachibutyrophobia",
+      "back": "Fear of peanut butter sticking to the roof of your mouth",
+      "deck": 22,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 80,
+    "fields": {
+      "front": "Nomophobia",
+      "back": "Fear of being without mobile phone coverage",
+      "deck": 22,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 81,
+    "fields": {
+      "front": "Hippopotomonstrosesquippedaliophobia",
+      "back": "Fear of long words (ironically)",
+      "deck": 22,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 82,
+    "fields": {
+      "front": "Coulrophobia",
+      "back": "Fear of clowns",
+      "deck": 22,
+      "difficulty": "Easy"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 83,
+    "fields": {
+      "front": "All Your Base Are Belong To Us",
+      "back": "Poorly translated phrase from the 1992 game 'Zero Wing' that became an internet phenomenon around 2001",
+      "deck": 23,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 84,
+    "fields": {
+      "front": "Hamster Dance",
+      "back": "A webpage created in 1998 featuring rows of animated dancing hamsters set to a sped-up sample",
+      "deck": 23,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 85,
+    "fields": {
+      "front": "Dancing Baby",
+      "back": "A 3D-rendered animation of a baby dancing to \"Hooked on a Feeling\" that went viral in 1996",
+      "deck": 23,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 86,
+    "fields": {
+      "front": "Badger Badger Badger",
+      "back": "A 2003 Flash animation featuring badgers, mushrooms, and snakes with a catchy repetitive song",
+      "deck": 23,
+      "difficulty": "Medium"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 87,
+    "fields": {
+      "front": "How to list all running Docker containers?",
+      "back": "docker ps",
+      "deck": 24,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 88,
+    "fields": {
+      "front": "How to build an image from a Dockerfile?",
+      "back": "docker build -t image_name:tag .",
+      "deck": 24,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 89,
+    "fields": {
+      "front": "How to run a container with port mapping?",
+      "back": "docker run -p host_port:container_port image_name",
+      "deck": 24,
+      "difficulty": "Hard"
+    }
+  },
+  {
+    "model": "flipquestapi.card",
+    "pk": 90,
+    "fields": {
+      "front": "How to see logs for a running container?",
+      "back": "docker logs container_name_or_id",
+      "deck": 24,
       "difficulty": "Hard"
     }
   }

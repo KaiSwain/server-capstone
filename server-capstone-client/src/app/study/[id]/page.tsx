@@ -73,12 +73,16 @@ export default function DeckDetails() {
         onClick={() => setFlipped(!flipped)}
       >
         <div
-          className={`relative w-full h-full transition-transform duration-700 ${flipped ? "rotate-y-180" : ""}`}
+          className={`relative w-full h-full transition-transform duration-700 ${
+            flipped ? "rotate-y-180" : ""
+          }`}
           style={{ transformStyle: "preserve-3d" }}
         >
           {/* Front */}
           <div
-            className={`absolute w-full h-full rounded-3xl bg-gradient-to-br ${getCategoryGradient(deck.category)} flex items-center justify-center text-2xl font-extrabold shadow-xl text-white`}
+            className={`absolute w-full h-full rounded-3xl bg-gradient-to-br ${getCategoryGradient(
+              deck.category
+            )} flex items-center p-10 justify-center text-2xl font-extrabold shadow-xl text-white`}
             style={{ backfaceVisibility: "hidden" }}
           >
             {deck.title}
@@ -86,10 +90,14 @@ export default function DeckDetails() {
 
           {/* Back */}
           <div
-            className={`absolute w-full h-full rounded-3xl bg-gradient-to-br ${getCategoryGradient(deck.category)} text-white flex items-center justify-center px-6 py-4 text-center rotate-y-180 shadow-xl`}
+            className={`absolute w-full h-full rounded-3xl bg-gradient-to-br ${getCategoryGradient(
+              deck.category
+            )} text-white flex items-center justify-center px-6 py-4 text-center rotate-y-180 shadow-xl`}
             style={{ backfaceVisibility: "hidden" }}
           >
-            <p className="text-base sm:text-lg font-medium">{deck.description}</p>
+            <p className="text-base sm:text-lg font-medium">
+              {deck.description}
+            </p>
           </div>
         </div>
       </div>
@@ -155,7 +163,16 @@ export default function DeckDetails() {
           </div>
         </div>
       )}
-      <div className="mt-10">by {deck.creator.username}</div>
+      <div className="mt-10 text-center">
+        <p className="text-gray-300">by {deck.creator.username}</p>
+        <button
+          onClick={() => router.back()}
+          className="mt-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded shadow-sm transition"
+        >
+          🔙 Back
+        </button>
+      </div>
+
       {/* Profile */}
       <div className="mt-16">
         <Profile profile={profile} />

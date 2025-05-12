@@ -18,7 +18,7 @@ export default function LikedDecks() {
   useEffect(() => {
     getLikedDecks()
       .then((decks) => {
-        setLikedDecks(decks);
+        setLikedDecks(decks.reverse());
         setLoading(false);
       })
       .catch((err) => {

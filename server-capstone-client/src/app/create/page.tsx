@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { postDeck } from "../data/decks";
+import { Router } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 export default function Create() {
   const [deckTitle, setDeckTitle] = useState("");
@@ -13,7 +15,7 @@ export default function Create() {
   const [back, setBack] = useState("");
   const [cardDifficulty, setCardDifficulty] = useState("");
   const [editIndex, setEditIndex] = useState<number | null>(null);
-
+  const router = useRouter()
   const categoryOptions = ["Faith", "Science", "History", "Coding", "Other"];
   const difficultyOptions = ["Easy", "Medium", "Hard"];
 
@@ -57,19 +59,24 @@ export default function Create() {
   const handleSubmitDeck = () => {
     if (!deckTitle || !deckDescription || !selectedDifficulty || !selectedCategory || cards.length === 0) {
       alert("Please fill out all fields and add at least one card.");
-      return;
     }
+      
+    else {
 
-    const deck = {
-      title: deckTitle,
-      description: deckDescription,
-      difficulty: selectedDifficulty,
-      category: selectedCategory,
-      cards,
-    };
-
-    postDeck(deck);
-    console.log("Deck submitted:", deck);
+      
+      
+      const deck = {
+        title: deckTitle,
+        description: deckDescription,
+        difficulty: selectedDifficulty,
+        category: selectedCategory,
+        cards,
+      };
+      
+      postDeck(deck);
+      console.log("Deck submitted:", deck);
+      router.push('/profile')
+    }
   };
 
   return (

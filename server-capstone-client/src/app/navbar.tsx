@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Home,
   BookOpen,
@@ -11,18 +11,39 @@ import {
 } from "lucide-react"; // Install via `npm i lucide-react`
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const toggleNavbar = () => setIsOpen(!isOpen);
+  
 
-  return (
-    <>
+
+  useEffect(() => {
+    const token = localStorage.getItem("game_token");
+    setIsLoggedIn(!!token);
+    const handleLoggedOut = () => setIsLoggedIn(false);
+    const handleLoggedIn = () => setIsLoggedIn(true);
+
+    window.addEventListener("logged out", handleLoggedOut);
+    window.addEventListener("logged in", handleLoggedIn);
+
+    return () => {
+      window.removeEventListener("logged out", handleLoggedOut);
+      window.removeEventListener("logged in", handleLoggedIn);
+    };
+  }, [window]);
+
+
+  if (isLoggedIn){
+
+    return (
+      <>
       {/* Toggle Button */}
       <button
         onClick={toggleNavbar}
         className={`fixed top-4 z-50 p-2 text-white rounded-full shadow-lg bg-gradient-to-br from-purple-600 via-pink-500 to-yellow-400 transition-all duration-300 ${
           isOpen ? "left-60" : "left-4"
-        }`}
-      >
+          }`}
+          >
         {isOpen ? "←" : "→"}
       </button>
 
@@ -30,8 +51,8 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 h-screen w-56 bg-gray-950 text-white px-4 py-6 transition-transform duration-300 z-40 border-r border-white/10 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
+          }`}
+          >
         {/* Title */}
         <h2 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 mb-8 text-center tracking-wide">
           FlipQuest
@@ -61,6 +82,7 @@ const Navbar = () => {
       </div>
     </>
   );
+}
 };
 
 export default Navbar;

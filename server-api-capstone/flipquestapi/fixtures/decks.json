@@ -1,6 +1,6 @@
 
 [
-{
+  {
     "model": "flipquestapi.deck",
     "pk": 1,
     "fields": {
@@ -46,6 +46,246 @@
       "creator": 1,
       "difficulty": "Easy",
       "category": "Spanish"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 5,
+    "fields": {
+      "title": "Dad Jokes 101",
+      "description": "The cringiest dad jokes that are so bad they're good",
+      "created_at": "2024-02-10",
+      "creator": 2,
+      "difficulty": "Easy",
+      "category": "Humor"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 6,
+    "fields": {
+      "title": "CSS Selector Wizardry",
+      "description": "Master the dark arts of CSS selectors",
+      "created_at": "2024-02-12",
+      "creator": 3,
+      "difficulty": "Hard",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 7,
+    "fields": {
+      "title": "Extinct Animals You've Never Heard Of",
+      "description": "Meet the forgotten creatures of evolutionary history",
+      "created_at": "2024-02-15",
+      "creator": 1,
+      "difficulty": "Medium",
+      "category": "Biology"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 8,
+    "fields": {
+      "title": "Movie Quotes That Were Improvised",
+      "description": "Famous lines that weren't in the original script",
+      "created_at": "2024-02-18",
+      "creator": 2,
+      "difficulty": "Medium",
+      "category": "Film"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 9,
+    "fields": {
+      "title": "Git Commands You Keep Forgetting",
+      "description": "The Git commands you always have to Google",
+      "created_at": "2024-02-20",
+      "creator": 3,
+      "difficulty": "Medium",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 10,
+    "fields": {
+      "title": "Foods That Were Invented By Accident",
+      "description": "Delicious mistakes that changed culinary history",
+      "created_at": "2024-02-22",
+      "creator": 1,
+      "difficulty": "Easy",
+      "category": "Food"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 11,
+    "fields": {
+      "title": "JavaScript Promises: A Love Story",
+      "description": "Async adventures in the land of .then() and .catch()",
+      "created_at": "2024-02-25",
+      "creator": 3,
+      "difficulty": "Hard",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 12,
+    "fields": {
+      "title": "Bizarre Olympic Sports of the Past",
+      "description": "Strange competitive events that were once Olympic sports",
+      "created_at": "2024-02-28",
+      "creator": 2,
+      "difficulty": "Medium",
+      "category": "Sports"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 13,
+    "fields": {
+      "title": "Medieval Insults",
+      "description": "How to offend someone like it's 1399",
+      "created_at": "2024-03-01",
+      "creator": 1,
+      "difficulty": "Medium",
+      "category": "History"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 14,
+    "fields": {
+      "title": "RegEx Nightmares",
+      "description": "Regular expressions that will haunt your dreams",
+      "created_at": "2024-03-03",
+      "creator": 3,
+      "difficulty": "Hard",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 15,
+    "fields": {
+      "title": "Conspiracy Theories That Turned Out To Be True",
+      "description": "When the tinfoil hats were right all along",
+      "created_at": "2024-03-05",
+      "creator": 2,
+      "difficulty": "Hard",
+      "category": "History"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 16,
+    "fields": {
+      "title": "Useless Superpowers",
+      "description": "Abilities that won't save the day but might start a conversation",
+      "created_at": "2024-03-08",
+      "creator": 1,
+      "difficulty": "Easy",
+      "category": "Humor"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 17,
+    "fields": {
+      "title": "CSS Flexbox vs Grid",
+      "description": "The eternal layout battle explained with memes",
+      "created_at": "2024-03-10",
+      "creator": 3,
+      "difficulty": "Medium",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 18,
+    "fields": {
+      "title": "Misheard Song Lyrics",
+      "description": "What you've been singing vs what they actually say",
+      "created_at": "2024-03-12",
+      "creator": 2,
+      "difficulty": "Easy",
+      "category": "Music"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 19,
+    "fields": {
+      "title": "Python's Hidden Gems",
+      "description": "Lesser-known Python features that will blow your mind",
+      "created_at": "2024-03-15",
+      "creator": 3,
+      "difficulty": "Hard",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 20,
+    "fields": {
+      "title": "Words That Don't Translate to English",
+      "description": "Unique concepts from other languages that English lacks",
+      "created_at": "2024-03-18",
+      "creator": 1,
+      "difficulty": "Medium",
+      "category": "Language"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 21,
+    "fields": {
+      "title": "HTTP Status Codes as Relationship Statuses",
+      "description": "Web responses as dating scenarios",
+      "created_at": "2024-03-20",
+      "creator": 3,
+      "difficulty": "Medium",
+      "category": "Coding"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 22,
+    "fields": {
+      "title": "Unusual Phobias",
+      "description": "Strange things people are legitimately afraid of",
+      "created_at": "2024-03-23",
+      "creator": 2,
+      "difficulty": "Easy",
+      "category": "Psychology"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 23,
+    "fields": {
+      "title": "Ancient Memes",
+      "description": "Internet jokes that only 90s kids will remember",
+      "created_at": "2024-03-25",
+      "creator": 1,
+      "difficulty": "Medium",
+      "category": "Internet Culture"
+    }
+  },
+  {
+    "model": "flipquestapi.deck",
+    "pk": 24,
+    "fields": {
+      "title": "Docker Commands for Mere Mortals",
+      "description": "Container magic explained for humans",
+      "created_at": "2024-03-28",
+      "creator": 3,
+      "difficulty": "Hard",
+      "category": "Coding"
     }
   }
 ]
